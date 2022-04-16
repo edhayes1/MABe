@@ -1,0 +1,17 @@
+python main.py \
+--pretrained_path bert_config.json \
+--batch_size 16 \
+--max_seq_length 80 \
+--mask_prob 0.7 \
+--epochs 160 \
+--learning_rate 3e-5 \
+--hidden_size 912 \
+--output_size 126 \
+--train_path raw_data/user_train.npy \
+--test_path raw_data/submission_data.npy \
+--train_ratio 0.95 \
+--separate_mice \
+--span_masking \
+--contrastive \
+--seed 34 \
+--submission_name submission.npy

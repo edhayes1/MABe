@@ -1,0 +1,5 @@
+raw_data
+model_outputs
+*.pyc
+*.npy
+*launch.json
