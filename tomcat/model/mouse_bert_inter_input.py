@@ -108,7 +108,7 @@ class InterMouseFeatureEmbeddings(nn.Module):
             for m2 in range(NUM_MICE):
                 if m1 == m2:
                     continue
-                embeds[m1] += segment_embeddings[m2] * self.inter_mouse_feature_embed(inter_mouse_features[m1][m2])
+                embeds[m1] += self.inter_mouse_feature_embed(inter_mouse_features[m1][m2])
         
         embeds = self.flatten(embeds)
         return embeds
